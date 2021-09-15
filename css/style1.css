@@ -1,0 +1,34 @@
+.animalTitle {
+    background-color: seagreen;
+}
+.index {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: slateblue;
+}
+#indexTitle {
+    font-size: large;
+    color: slategrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+    /* gets rid of hyperlink decoration styling links - https://www.w3schools.com/css/css_link.asp */
+/* unvisited link */
+a:link {
+    color: red;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
