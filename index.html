@@ -17,6 +17,11 @@
         #indexTitle {
             font-size: large;
             color: slategrey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+        }
+            /* gets rid of hyperlink decoration styling links - https://www.w3schools.com/css/css_link.asp */
+        a:link {
+            text-decoration: none;
         }
 
 </style>
@@ -24,14 +29,19 @@
     <h1>Animal Farm</h1>
     <div class="index">
         <div id="indexTitle"><h3>Index</h3></div>
-        axolotls
+        <p><a href="index1.html">axolotls</a></p>
         ducks
         cats
     </div>
     <div class="animalTitle"><h4>axolotls</h4></div>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, culpa?
+    <a href="index1.html">
+        <img src="axolotl1.jpg" style="width: 100px; height: 100px;">
+    </a>
+
     <div class="animalTitle"><h4>ducks</h4></div class="animalTitle">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, culpa?
+
     <div class="animalTitle"><h4>cats</h4></div>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, culpa?
 </body>
