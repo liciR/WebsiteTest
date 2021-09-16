@@ -10,6 +10,13 @@
     color: slategrey;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
+
+/* DOESNT WORK */
+#ironmaninfo {
+    background-image: ('images/ironman.jpg');
+    /* background-image: url('images/ironman.jpg'); */
+}
+
     /* gets rid of hyperlink decoration styling links - https://www.w3schools.com/css/css_link.asp */
 /* unvisited link */
 a:link {
@@ -32,3 +39,9 @@ a:link {
   a:active {
     color: blue;
   }
+
+  /* classed link styles, appropriate for two area */
+a.two:link {color: greenyellow; text-decoration: none;}
+a.two:visited {color: yellow; text-decoration: none;}
+a.two:hover {color: orange;}
+a.two:active {color: fuchsia;}
