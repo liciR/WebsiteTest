@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+
+.centered {
+  /* keeps text on the top */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* ///////////////////////////// */
+
+#container1{
+  position: relative;
+} 
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+</style>
+
+<body>
+
+<!-- img with text on top 
+https://www.w3schools.com/howto/howto_css_image_text.asp-->
+    <div class="container">
+        <img src="images/a44.jpg" alt="" style="width:100%;">
+        <div class="bottom-left">Bottom Left</div>
+        <div class="top-left">Top Left</div>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-right">Bottom Right</div>
+        <div class="centered">Centered</div>
+    </div>
+
+<!-- text block on img
+https://www.w3schools.com/howto/howto_css_image_text_blocks.asp   -->
+<div id="container1">
+  <img src="images/ironman.jpg" style="width:100%;">
+  <div class="text-block">
+    <h4>Ironman</h4>
+    <p>Tony Stark</p>
+  </div>
+</div>
+
+</body>
+</html>

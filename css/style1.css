@@ -13,7 +13,7 @@
 
 
 #ironmaninfo {
-    background-image:url('images/ironman.jpg');
+  background-image:url('../images/ironman.jpg');
 }
 
     /* gets rid of hyperlink decoration styling links - https://www.w3schools.com/css/css_link.asp */

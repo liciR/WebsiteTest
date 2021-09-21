@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    :root {
+        --primaryCol1 : rgb(133, 134, 134);
+        --primaryCol2 : rgb(247, 247, 247);
+        --highlight1 : rgb(210, 252, 241);
+        --highlight2 : rgb(255, 249, 170);
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--primaryCol1);
+        background-color: var(--primaryCol2);
+    }
+    #banner {
+        background-color: var(--primaryCol1);
+        color: var(--primaryCol2);
+        padding: 0;
+        padding-bottom: 10px;
+        margin: 0;
+        height: 105px;
+    }
+    #banner h2 {
+        padding: 0 10px;
+    }
+    #banner img {
+        background-color: var(--primaryCol2);
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        margin: 0;
+    }
+    #navbar {
+        font-weight: bold;
+        height: 40px;
+        
+    }
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        
+    }
+    #navbar li {
+        padding: 5px 20px;
+        margin: 10px;
+    
+    }
+
+    #hero {
+        text-align: center;
+        outline-color: coral;
+        margin: 0;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        /* display: block; */
+
+    }
+
+    #heroimg {
+        display : block;
+        width : 100%;
+        height: 150px;
+        margin :0;
+        padding-top: 20px;
+    }
+    #hero h1 {
+        background-color: var(--primaryCol1);
+        color: var(--primaryCol2);
+        margin: 0;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    #mainCont {
+        /* sets how wide the screen/whole div will spread */
+        width: 800px;
+        margin: 0;
+        padding: 0;
+        
+        position: absolute;
+        /* shifts to the left */
+        left: 50%;
+        /* shift back to the middle */
+        transform: translate(-50%);
+    }
+    #contact {
+        position: absolute;
+        /* puts on right side */
+        right: 0;
+        padding: 5px;
+    }
+    #mainInfo {
+        padding: 15px;
+        padding-bottom: 30px;
+        line-height: 1.5;
+    }
+    #divider {
+        position: relative;
+        height: 5px;
+        border-style: solid;
+        /* makes just 2 parallel lines */
+        border-left: transparent;
+        border-right: transparent;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 2px;
+    }
+    #mainFlex {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding-bottom: 100px;
+    }
+    #mainFlex h3 {
+        color: var(--highlight2);
+        text-align: center;
+    }
+    #footer {
+        padding: 10px;
+        background-color: var(--primaryCol2);
+        color: var(--primaryCol1);
+    }
+    #footername {
+        float: right;
+    }
+</style>
+
+<body>
+<div id="mainCont">
+       <div id="banner">
+           <!-- website logo -->
+        <img src="images/ironman.jpg" alt="webicon" width="70px">
+      <!-- contact details -->
+        <contact id="contact">
+            <h2>
+                Contact Us
+            </h2>
+            <p>Phone 27927629</p>
+            <p>Instagram</p>
+            <p>Facebook</p>
+        </contact>
+       </div> 
+    <!-- navbar using list -->
+       <div id="navbar">
+           <ul>
+               <li>Movies</li>
+               <li>Cast</li>
+               <li>Villains</li>
+               <li>Plotlines</li>
+           </ul>
+       </div>
+    <!-- img -->
+       <div id="hero">
+           <img id="heroimg" src="images/a40.jpg" alt="" id=hero>
+           <h1>Avengers</h1>
+       </div>
+    
+       <!-- info -->
+       <div id=mainInfo>
+           <h2>Descrption</h2>
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde repellendus iusto culpa ipsum alias odit doloremque. Recusandae, accusantium fugiat! Dolore?
+       </div>
+    <!-- make a divider -->
+       <div id=divider> </div>
+    
+       <!-- three column body -->
+       <!-- if want to have (going horizontally) word, para, word, para, word para 
+            do as such-
+            but if want to have word then para under, word then para under -
+            must section wach word+para into a div -->
+       <div id="mainFlex">
+        <h3>WordA</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, et?
+        <h3>WordB</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, et?
+        <h3>WordC</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, et?
+       </div>
+    <!-- footer -->
+       <div id="footer">
+           <p id="footername">Alicia Rodrigues</p>
+           <!--  if want to do inline , dont have to kive id and must simply put
+                style="float: right;" -->
+           <p>All rights reserved</p>
+       </div>
+</div>
+</body>
+</html>

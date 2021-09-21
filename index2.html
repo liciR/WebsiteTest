@@ -7,48 +7,110 @@
     <title>Document</title>
 </head>
 <style>
+/* Add a background image for the entire page 
+https://www.w3schools.com/html/html_images_background.asp 
+the image stays the same in background, the text just scrolls over the top*/
+body {
+  background-image: url('images/a40.jpg');
+  /* To avoid the background image from repeating itself, set the background-repeat property to no-repeat */
+  background-repeat: no-repeat;
+  /* If you want the background image to cover the entire element - set the background-size property to cover.
+  To make sure the entire element is always covered, set the background-attachment property to fixed:
+This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions): */
+  background-attachment: fixed;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  /* If want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%: */
 
+}
+
+/* FIXED NAVBAR https://www.w3schools.com/howto/howto_css_fixed_menu.asp  */
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  /* fixed positioning */
+  top: 0;
+  /* positions navbar at top of page */
+  left: 0;
+  width: 100%;
+  /* full width */
+
+}
 #navbar ul {
-list-style: none;
-padding: 0px;
-margin-left: auto;
-width: 900px;
-}
-
-#navbar li {
+    width: 100%;
     list-style: none;
+    margin: 0;
     padding: 0px;
-    display: inline;
-
-.myIndex {
+    /* width: 100%;
+    height: 30px; */
+    overflow: hidden;
     background-color: beige;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    align-items: center;
+    /* display: flex;
+    flex-direction: row; */
 }
 
+/* #navbar li {
+    float: left;
+} */
+
+#navbar li a{
+    float: left;
+    display: block;
+ 
+    color: black;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    /* display: inline;  */
+    /* this keeps the text in line not in rows */
 }
+
+li a:hover {
+  background-color: tan;
+}
+
+.mainText {
+    margin-top: 50px;
+
+}
+/* .mainText {
+    margin-top: 50px;
+    /* scroll-padding-top: 100px; */
+} 
+
+
+
+
 </style>
 
+
+
+
+
+
+
 <body>
-    <h2>ducks</h2>
+    
 
+    <!-- LISTS https://www.w3schools.com/html/html_lists_unordered.asp  -->
 <div id="navbar">
-        <ul>
-            <li><a>duck</a></li>
-            <li><a href="index1.html">axolotl</a></li>
-            <li>cat</li>
-        </ul>
-</div>
-
-<div class="myIndex">
     <ul>
-        <li><a>duck</a></li>
-        <li><a href="index1.html">axolotl</a></li>
-        <li>cat</li>
+         <li><a>duck</a></li>
+         <li><a href="index1.html">axolotl</a></li>
+         <li><a>cat</a></li>
     </ul>
 </div>
 
+<div class="mainText">
+    <h2>ducks</h2>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nobis deleniti architecto quidem, ipsam quia perspiciatis, iste vero tempore maiores doloremque eaque magnam mollitia impedit labore voluptatibus! Enim pariatur nobis quos repudiandae vero ipsam earum dolorem dolor delectus. Porro deserunt debitis accusamus, veniam ex asperiores consectetur magnam magni neque exercitationem at dicta, facere esse culpa distinctio quibusdam voluptatem qui quos libero aspernatur autem obcaecati, dignissimos amet voluptates. Laborum nobis deserunt, ipsa, unde quidem magnam mollitia aspernatur fuga voluptate nisi, repellendus deleniti obcaecati necessitatibus vitae numquam nam exercitationem natus accusantium asperiores maxime dolor debitis temporibus? Eos ipsum pariatur provident ab recusandae, voluptatum, veniam nisi asperiores natus quas porro voluptate nobis, ex deleniti illum accusamus? Et aliquid voluptatibus nobis vel voluptates esse culpa? Harum labore temporibus, commodi quaerat distinctio illum assumenda facilis illo qui! Praesentium architecto saepe odit rerum natus ipsam, distinctio voluptates consectetur fuga tempora ipsum nulla id molestiae perferendis fugit iste qui reprehenderit voluptatibus eveniet ut dolorum asperiores. Vero asperiores odit quidem ipsa laboriosam consequuntur, similique ut earum excepturi ipsam itaque fugit dicta amet doloremque accusantium perspiciatis ex aspernatur, explicabo magni accusamus ratione? Temporibus debitis culpa nisi quo totam eligendi, eveniet distinctio esse repudiandae quis, sed a, nihil magni. Sit?
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quis, pariatur accusantium quos, earum vitae non hic iure error ratione consequuntur perspiciatis nemo deleniti odio, temporibus dolor doloribus praesentium necessitatibus quas. Iure natus quo possimus a quaerat illum veniam aliquam suscipit tempora voluptatem, voluptas consequuntur at autem exercitationem commodi dolorum ex dolorem excepturi maxime voluptatibus nihil minima, repellendus quisquam. Suscipit veniam, magnam debitis neque maxime laborum at voluptas tempore tenetur, tempora esse optio, fugiat deleniti pariatur commodi recusandae quia quidem! Incidunt ex sint illum illo quos. Tempora, id neque minus asperiores iure nostrum officiis laboriosam quae ipsa! Fugiat id illo rem eaque tempora blanditiis dolor, velit excepturi modi minima nulla est ducimus neque doloremque, molestias atque. Error officia omnis molestias necessitatibus dolore minus veniam commodi illo a incidunt ipsam officiis sapiente porro alias voluptatum in doloribus vel harum, possimus tenetur qui excepturi. In sed velit veniam saepe, distinctio nisi, molestiae soluta temporibus beatae omnis id ab! Iusto, suscipit? Voluptates, asperiores cupiditate quae aut ipsam quidem deserunt consequuntur. Impedit quisquam est error voluptas enim quasi praesentium facilis, dolor fugiat aut veritatis excepturi quis possimus eaque quas numquam ullam quae explicabo nemo nobis magnam maxime aliquam! Tempore quia vitae sed enim odit exercitationem sunt distinctio rem eius quam sapiente consequuntur repellendus pariatur voluptatem velit, mollitia consequatur quibusdam neque. Ratione, labore nulla corporis a ab minima impedit eum necessitatibus quam libero soluta vel deserunt eveniet excepturi at minus quia? Sunt possimus, reiciendis aliquid unde blanditiis culpa repellendus laboriosam nesciunt facilis sit quibusdam quod, dicta dolore eos eius. Voluptas maiores natus, explicabo molestias provident odit esse, repudiandae ex, sequi doloribus dolorem quos rem eos dicta modi sapiente? Rem aut dolores eveniet, voluptatibus illo maxime facilis repellendus qui inventore voluptatem quibusdam ad animi consectetur sunt accusantium harum natus cumque ratione. Voluptatum nisi, numquam magni quasi eos reprehenderit? Quis dignissimos similique qui, sapiente repellat officiis doloremque eveniet maxime ratione repellendus cupiditate autem, at rem molestiae saepe dolorum quibusdam adipisci porro. Nihil, provident? Deleniti autem tenetur reiciendis officia, molestiae tempora. Magni aspernatur quia aliquid inventore aliquam expedita? Quod obcaecati perspiciatis tempore illo nostrum magnam possimus molestiae fugiat explicabo vel quam velit blanditiis at tenetur, nobis excepturi atque culpa laudantium harum? Consectetur necessitatibus tenetur accusamus perspiciatis qui ullam deserunt aut id laudantium, eos quasi autem maiores expedita nemo, commodi sed molestias ducimus! Explicabo modi asperiores saepe dolore dolor ipsam ipsum fugiat architecto suscipit. Eum facilis at dolorum. Deleniti facilis deserunt ut excepturi perspiciatis modi voluptatem nobis tempore, consectetur tempora quas voluptates assumenda placeat. Voluptates id eum porro amet culpa, facere mollitia laboriosam autem nesciunt blanditiis, nostrum vero eligendi iure rem. Voluptate placeat sint fuga, in nostrum repellendus consequuntur distinctio excepturi ex. Eveniet molestias atque sit! Odio harum aliquam expedita eaque, quibusdam nam animi, quidem repellat voluptate numquam minima repellendus provident nostrum. Adipisci quos, numquam similique quibusdam laboriosam nihil, ea eum nemo neque consequuntur explicabo error, ut dolores! Eius explicabo odio rerum cumque error consectetur sit dicta temporibus aspernatur neque sint voluptatibus, enim deserunt, nam quod, veniam quas mollitia.
+
+</div> 
+
+<!-- The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
+    https://www.w3schools.com/html/html_images_picture.asp -->
 </body>
 </html>
